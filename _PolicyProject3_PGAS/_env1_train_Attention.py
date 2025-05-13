@@ -20,7 +20,7 @@ from diffusers.schedulers.scheduling_ddpm import DDPMScheduler
 from diffusers.training_utils import EMAModel
 from diffusers.optimization import get_scheduler
 from tqdm.auto import tqdm
-dataset_path =           (".\\_PolicyProject3_PGAS\\_trained_models_env1\\_teach1_dataset")
+dataset_path =           (".\\_PolicyProject3_PGAS\\_trained_models_env1\\_teach1_dataset_amplify1")
 ckpt_path =              (".\\_PolicyProject3_PGAS\\_trained_models_env1\\model_PolicyProject1_Attention.ckpt")
 output_dir =             (".\\_PolicyProject3_PGAS\\_trained_models_env1")
 training_loss_csv_path = (".\\_PolicyProject3_PGAS\\_trained_models_env1\\training_loss_Attention.csv")

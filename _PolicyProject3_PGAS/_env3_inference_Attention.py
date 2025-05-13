@@ -525,8 +525,8 @@ def save_model(num_epochs, optimizer, lr_scheduler, ema):
 env = assemble_env_3.AssembleEnv(img_obs_height=img_height, img_obs_width=img_width, img_obs_channel=img_channel,
                                 agent_obs_dim=agent_obs_dim, action_dim=action_dim,
                                 obs_horizon=obs_horizon, action_horizon=action_horizon, pred_horizon=pred_horizon)
-# env.RTDE_SOFT_F_THRESHOLD = 15
-# env.RTDE_SOFT_RETURN = 0.002
+env.rob.RTDE_SOFT_F_THRESHOLD = 25
+env.rob.RTDE_SOFT_RETURN = 0.004
 
 while True:
     print("重置.......")
